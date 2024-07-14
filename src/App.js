@@ -449,7 +449,7 @@ const App = () => {
             description: `Conducted comprehensive data analysis and visualization of the S&P 500 index using Python, pandas, and matplotlib. Analyzed over 20 years of historical data comprising more than 5,000 data points. Advanced machine learning techniques, including feature scaling and time series analysis, were used to enhance model performance. Achieved a Mean Absolute Percentage Error (MAPE) of less than 5%. Utilized Keras and TensorFlow for building and training models.`,
             technologies: "Python",
             image: "bull.jpeg",
-            liveDemo: "https://daniel21b.github.io/CMSC320-Final_Group_project/"
+            liveDemo: "https://daniel21b.github.io/S-P-500-stock-analysis/"
           }].map((project, index) => (
             <div key={index} style={{
               display: 'flex',
