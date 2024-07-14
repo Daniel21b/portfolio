@@ -375,7 +375,7 @@ const App = () => {
         }}>
           {[
             'Node', 'MongoDB', 'Pandas', 'Express', 'Github', 'Docker', 'Postman', 'Excel', 'Git', 
-            'Project Management', 'Agile', 'Time Management','IBM Consulting Certificate'
+            'Project Management', 'Agile', 'Time Management','IBM Consulting Certificate', 'HTML', 'CSS'
           ].map(skill => (
             <div key={skill} className="skill" style={{
               padding: '10px 20px',
