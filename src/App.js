@@ -336,8 +336,7 @@ const App = () => {
             gap: '10px'
           }}>
             {[
-              'HTML', 'CSS', 'JavaScript', 'React', 'Express.js', 'MongoDB', 'Git', 'Next.js', 'Node.js',
-              'Java', 'Python', 'C++', 'HTML5', 'LINUX (basic)', 'C', 'Assembly', 'PHP'
+              'JavaScript', 'React','Java', 'Python', 'C++', 'HTML5', 'LINUX (basic)', 'C', 'Assembly', 'PHP'
             ].map(tech => (
               <div key={tech} className="skill" style={{
                 padding: '10px 20px',
@@ -376,7 +375,7 @@ const App = () => {
         }}>
           {[
             'Node', 'MongoDB', 'Pandas', 'Express', 'Github', 'Docker', 'Postman', 'Excel', 'Git', 
-            'Project Management', 'Agile', 'Time Management'
+            'Project Management', 'Agile', 'Time Management','IBM Consulting Certificate'
           ].map(skill => (
             <div key={skill} className="skill" style={{
               padding: '10px 20px',
