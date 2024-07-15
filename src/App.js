@@ -398,101 +398,110 @@ const App = () => {
       </div>
 
       <div id="projects" ref={projectsRef} style={{ 
-        minHeight: '100vh', 
-        background: '#111', 
-        color: '#fff', 
-        fontFamily: 'Arial, sans-serif',
-        padding: '80px 20px 20px',
-        boxSizing: 'border-box'
-      }}>
-        <h1 style={{ 
-          fontSize: '4em', 
-          textAlign: 'center', 
-          marginBottom: '40px',
-          position: 'relative'
-        }}>
-          Projects
-          <div style={{ 
-            height: '10px', 
-            width: '120px', 
-            backgroundColor: '#ff4b4b', 
-            position: 'absolute',
-            bottom: '-10px',
-            left: '50%',
-            transform: 'translateX(-50%)'
-          }}></div>
-        </h1>
+    minHeight: '100vh', 
+    background: '#111', 
+    color: '#fff', 
+    fontFamily: 'Arial, sans-serif',
+    padding: '80px 20px 20px',
+    boxSizing: 'border-box'
+  }}>
+    <h1 style={{ 
+      fontSize: '4em', 
+      textAlign: 'center', 
+      marginBottom: '40px',
+      position: 'relative'
+    }}>
+      Projects
+      <div style={{ 
+        height: '10px', 
+        width: '120px', 
+        backgroundColor: '#ff4b4b', 
+        position: 'absolute',
+        bottom: '-10px',
+        left: '50%',
+        transform: 'translateX(-50%)'
+      }}></div>
+    </h1>
 
-        <div style={{
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      gap: '40px',
+      flexWrap: 'wrap'
+    }}>
+      {[{
+        title: "Repo Market Analyzer",
+        description: `Created a machine learning model to predict the optimal bank for interbank loans based on historical transaction data. Trained a Random Forest model, achieving an accuracy of 80% on test data, and deployed the model using a Flask API. Designed a web interface allowing users to input loan details and receive bank recommendations, improving decision-making efficiency for financial institutions.`,
+        technologies: "Python, Flask, Machine Learning",
+        image: "repo.png",
+        liveDemo: "https://github.com/Daniel21b/Repo-Market-Analyzer"
+      },
+      {
+        title: "Financial Statement Visualization",
+        description: `Implemented a comprehensive solution for visualizing financial statements, focusing on 10-Q and 10-K reports. Aggregated data from multiple sources including the SEC EDGAR database and company websites using APIs and web scraping techniques. Built a web application using React and Flask to host and serve visualizations, enabling user interaction through filtering, sorting, and selection features.`,
+        technologies: "Python, JavaScript",
+        image: "SecFinancial.png",
+        liveDemo: "https://github.com/Daniel21b/Financial-Statement-Visualization"
+      },
+      {
+        title: "Hospital Occupancy Monitoring System",
+        description: `Developed a system to monitor and predict hospital occupancy levels using mobile ping location data, analyzing data from over 1 million mobile devices. Parsed and cleaned location data to ensure accuracy and consistency, achieving a 95% reduction in data errors. Analyzed mobile ping density and frequency around hospital locations to estimate occupancy levels, identifying key patterns and trends.`,
+        technologies: "Python, SQL, JavaScript",
+        image: "Hospital_image.png",
+        liveDemo: "https://github.com/Daniel21b/Hospital-Occupancy-Monitoring-System"
+      },
+      {
+        title: "S&P 500 Index Analysis and Prediction",
+        description: `Conducted comprehensive data analysis and visualization of the S&P 500 index using Python, pandas, and matplotlib. Analyzed over 20 years of historical data comprising more than 5,000 data points. Advanced machine learning techniques, including feature scaling and time series analysis, were used to enhance model performance. Achieved a Mean Absolute Percentage Error (MAPE) of less than 5%. Utilized Keras and TensorFlow for building and training models.`,
+        technologies: "Python",
+        image: "bull.jpeg",
+        liveDemo: "https://daniel21b.github.io/S-P-500-stock-analysis/"
+      }].map((project, index) => (
+        <div key={index} style={{
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '40px',
-          flexWrap: 'wrap'
+          width: '100%',
+          maxWidth: '1200px',
+          backgroundColor: '#1a1a1a',
+          borderRadius: '10px',
+          overflow: 'hidden',
+          flexDirection: 'row',
+          marginBottom: '40px'
         }}>
-          {[{
-            title: "Financial Statement Visualization",
-            description: `Developed a comprehensive project for visualizing financial statements, focusing on 10-Q and 10-K reports. Collected data from multiple sources including SEC EDGAR database and company websites using APIs and webscraping techniques. Developed a web application using React and Flask to host and serve visualizations, enabling user interaction through filtering, sorting, and selection features.`,
-            technologies: "Python, JavaScript",
-            image: "SecFinancial.png",
-            liveDemo: "https://github.com/Daniel21b/Financial-Statement-Visualization"
-          },
-          {
-            title: "Hospital Occupancy Monitoring System",
-            description: `Developed a system to monitor and predict hospital occupancy levels using mobile ping location data, analyzing data from over 1 million mobile devices. Parsed and cleaned location data to ensure accuracy and consistency, achieving a 95% reduction in data errors. Analyzed mobile ping density and frequency around hospital locations to estimate occupancy levels, identifying key patterns and trends.`,
-            technologies: "Python, SQL, JavaScript",
-            image: "Hospital_image.png",
-            liveDemo: "https://github.com/Daniel21b/Hospital-Occupancy-Monitoring-System"
-          },
-          {
-            title: "S&P 500 Index Analysis and Prediction",
-            description: `Conducted comprehensive data analysis and visualization of the S&P 500 index using Python, pandas, and matplotlib. Analyzed over 20 years of historical data comprising more than 5,000 data points. Advanced machine learning techniques, including feature scaling and time series analysis, were used to enhance model performance. Achieved a Mean Absolute Percentage Error (MAPE) of less than 5%. Utilized Keras and TensorFlow for building and training models.`,
-            technologies: "Python",
-            image: "bull.jpeg",
-            liveDemo: "https://daniel21b.github.io/S-P-500-stock-analysis/"
-          }].map((project, index) => (
-            <div key={index} style={{
-              display: 'flex',
-              width: '100%',
-              maxWidth: '1200px',
-              backgroundColor: '#1a1a1a',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              flexDirection: 'row',
-              marginBottom: '40px'
-            }}>
-              <div style={{
-                flex: '1 1 40%',
-                backgroundImage: `url(${project.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                minHeight: '300px'
-              }}></div>
-              <div style={{
-                flex: '1 1 60%',
-                padding: '20px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                backgroundColor: '#4B0082'
-              }}>
-                <h2 style={{ fontSize: '2em', marginBottom: '10px' }}>{project.title}</h2>
-                <p style={{ marginBottom: '20px' }}>{project.description}</p>
-                <p style={{ marginBottom: '20px', fontStyle: 'italic' }}>{project.technologies}</p>
-                <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-button" style={{
-                  padding: '10px 20px',
-                  backgroundColor: '#ff4b4b',
-                  color: '#fff',
-                  textDecoration: 'none',
-                  borderRadius: '5px',
-                  textAlign: 'center',
-                  transition: 'all 0.3s ease'
-                }}>LIVE DEMO</a>
-              </div>
-            </div>
-          ))}
+          <div style={{
+            flex: '1 1 40%',
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/' + project.image})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: '300px'
+          }}></div>
+          <div style={{
+            flex: '1 1 60%',
+            padding: '20px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            backgroundColor: '#4B0082'
+          }}>
+            <h2 style={{ fontSize: '2em', marginBottom: '10px' }}>{project.title}</h2>
+            <p style={{ marginBottom: '20px' }}>{project.description}</p>
+            <p style={{ marginBottom: '20px', fontStyle: 'italic' }}>{project.technologies}</p>
+            <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-button" style={{
+              padding: '10px 20px',
+              backgroundColor: '#ff4b4b',
+              color: '#fff',
+              textDecoration: 'none',
+              borderRadius: '5px',
+              textAlign: 'center',
+              transition: 'all 0.3s ease'
+            }}>LIVE DEMO</a>
+          </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+
+
 
       <div id="contact" ref={contactRef} style={{ 
         minHeight: '100vh', 
