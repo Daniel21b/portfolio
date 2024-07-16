@@ -111,7 +111,7 @@ const Navigation = ({ currentSection, onNavigate }) => {
       top: 0,
       left: 0,
       right: 0,
-      padding: '20px',
+      padding: '10px 20px',
       display: 'flex',
       justifyContent: 'flex-end',
       backgroundColor: 'rgba(17, 17, 17, 0.8)',
@@ -229,6 +229,44 @@ const App = () => {
             box-shadow: 0 0 5px #ff4b4b, 0 0 10px #ff4b4b, 0 0 15px #ff4b4b;
             transition: all 0.3s ease;
           }
+
+          @media (max-width: 768px) {
+            nav {
+              padding: 10px;
+              justify-content: space-around;
+            }
+            h1 {
+              font-size: 2em;
+            }
+            p {
+              font-size: 1em;
+            }
+            button {
+              font-size: 0.8em;
+              padding: 8px 16px;
+            }
+            .skill, .project-button {
+              padding: 8px 16px;
+              font-size: 0.8em;
+            }
+          }
+
+          @media (max-width: 480px) {
+            h1 {
+              font-size: 1.5em;
+            }
+            p {
+              font-size: 0.9em;
+            }
+            button {
+              font-size: 0.7em;
+              padding: 6px 12px;
+            }
+            .skill, .project-button {
+              padding: 6px 12px;
+              font-size: 0.7em;
+            }
+          }
         `}
       </style>
       <Navigation currentSection={currentSection} onNavigate={handleNavigation} />
@@ -243,7 +281,9 @@ const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        padding: '20px',
+        boxSizing: 'border-box'
       }}>
         <ParticleBackground mousePosition={mousePosition} />
         <h1 style={{ fontSize: '3em', marginBottom: '0.2em', zIndex: 1 }}>
@@ -318,13 +358,13 @@ const App = () => {
               border: '2px solid #ff4b4b', 
               borderRadius: '50%', 
               margin: '0 auto 20px',
-              backgroundImage: 'url(dani.jepg)', // Path to the image,
+              backgroundImage: 'url(dani.jpeg)', // Path to the image,
               backgroundSize: 'cover',
               backgroundPosition: 'center' 
             }}></div>
             <p style={{ lineHeight: '1.6', fontSize: '1.1em' }}>
-            Fully committed to the philosophy of lifelong learning, I'm a student interested in the worlds of finance and programming.
-             The unique combination of creativity, logic, technology, and the endless discovery of new concepts drives my excitement and passion.
+             I'm a student interested in the worlds of finance and programming.
+             The unique combination of creativity, technology, and the endless discovery of new concepts drives my passion.
               When I'm not at my computer, I enjoy spending time reading finance book.
             </p>
           </div>
@@ -501,8 +541,6 @@ const App = () => {
     </div>
   </div>
 
-
-
       <div id="contact" ref={contactRef} style={{ 
         minHeight: '100vh', 
         background: '#111', 
@@ -542,7 +580,7 @@ const App = () => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '100%' }}>
             {[
               { label: 'Email', value: 'd.asfaw10@gmail.com' },
-              { label: 'Phone', value: '+' },
+              { label: 'Phone', value: '' },
               { label: 'LinkedIn', value: 'https://www.linkedin.com/in/daniel-berhane/' }
             ].map((contact, index) => (
               <div key={index} style={{
