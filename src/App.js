@@ -393,7 +393,7 @@ const App = () => {
             <p style={{ lineHeight: '1.6', fontSize: '1.1em' }}>
                I'm a student interested in the worlds of finance and programming.
               The unique combination of logic, technology, and the endless discovery of new concepts drives my excitement and passion.
-              When I'm not at my computer, I enjoy spending time reading finance book.
+              When I'm not at my computer, I enjoy spending time reading book and playing chess.
             </p>
           </div>
           <div style={{ 
