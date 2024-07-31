@@ -510,7 +510,7 @@ const App = () => {
             description: `Implemented a comprehensive solution for visualizing financial statements, focusing on 10-Q and 10-K reports. Aggregated data from multiple sources including the SEC EDGAR database and company websites using APIs and web scraping techniques. Built a web application using React and Flask to host and serve visualizations, enabling user interaction through filtering, sorting, and selection features.`,
             technologies: "Python, JavaScript",
             image: "SecFinancial.png",
-            liveDemo: "https://github.com/Daniel21b/Financial-Statement-Visualization"
+            liveDemo: "https://financial-statement-visualization-1.onrender.com/"
           },
           {
             title: "Hospital Occupancy Monitoring System",
