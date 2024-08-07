@@ -393,7 +393,7 @@ const App = () => {
             <p style={{ lineHeight: '1.6', fontSize: '1.1em' }}>
                I'm a student interested in the worlds of finance and programming.
               The unique combination of logic, technology, and the endless discovery of new concepts drives my excitement and passion.
-              When I'm not at my computer, I enjoy spending time reading book and playing chess.
+              When I'm not at my computer, I enjoy spending time reading books and playing chess.
             </p>
           </div>
           <div style={{ 
@@ -507,8 +507,8 @@ const App = () => {
           },
           {
             title: "Financial Statement Visualization",
-            description: `Implemented a comprehensive solution for visualizing financial statements, focusing on 10-Q and 10-K reports. Aggregated data from multiple sources including the SEC EDGAR database and company websites using APIs and web scraping techniques. Built a web application using React and Flask to host and serve visualizations, enabling user interaction through filtering, sorting, and selection features.`,
-            technologies: "Python, JavaScript",
+            description: `Implemented a comprehensive solution for visualizing financial statements, focusing on 10-Q and 10-K reports. Aggregated data from multiple sources including the SEC EDGAR database and company websites using APIs and web scraping techniques. Built a web application using React to host and serve visualizations, enabling user interaction through filtering, sorting, and selection features.`,
+            technologies: "React, Node.js(Give it few minutes to load up",
             image: "SecFinancial.png",
             liveDemo: "https://financial-statement-visualization-1.onrender.com/"
           },
