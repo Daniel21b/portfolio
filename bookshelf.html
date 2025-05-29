@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf - Daniel Berhane</title>
+    <meta name="description" content="Daniel Berhane's curated collection of books across philosophy, finance, science, and personal development.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-photo">
+                        <img src="assets/profile-placeholder.jpg" alt="Daniel Berhane" id="profile-img">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">Daniel Berhane</h1>
+                        <p class="title">Software Engineer | Computer Science Student</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="social-links">
+                        <a href="https://github.com/Daniel21b" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/daniel-berhane/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <a href="index.html" class="cta-button">Back to Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="bookshelf.html" class="active">Bookshelf</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Bookshelf Section -->
+        <section class="section bookshelf-section">
+            <div class="container">
+                <h2 class="section-title">My Bookshelf</h2>
+                <p class="bookshelf-subtitle">A curated collection of books that shape my thinking across philosophy, finance, science, and personal development.</p>
+                
+                <div class="bookshelf-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="finance">Finance</button>
+                    <button class="filter-btn" data-category="philosophy">Philosophy</button>
+                    <button class="filter-btn" data-category="science">Science</button>
+                    <button class="filter-btn" data-category="psychology">Psychology</button>
+                    <button class="filter-btn" data-category="literature">Literature</button>
+                    <button class="filter-btn" data-category="history">History</button>
+                </div>
+
+                <div class="books-grid">
+                    <div class="book-card" data-category="psychology">
+                        <h3 class="book-title">Creating a Life</h3>
+                        <p class="book-author">James Hollis</p>
+                        <span class="book-category">Psychology</span>
+                    </div>
+
+                    <div class="book-card" data-category="finance">
+                        <h3 class="book-title">The Intelligent Investor</h3>
+                        <p class="book-author">Benjamin Graham</p>
+                        <span class="book-category">Finance</span>
+                    </div>
+
+                    <div class="book-card" data-category="science">
+                        <h3 class="book-title">The Art of Doing Science and Engineering</h3>
+                        <p class="book-author">Richard Hamming</p>
+                        <span class="book-category">Science</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">The Prince</h3>
+                        <p class="book-author">Niccolò Machiavelli</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">The Analects</h3>
+                        <p class="book-author">Confucius</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+
+                    <div class="book-card" data-category="literature">
+                        <h3 class="book-title">Sun and Steel</h3>
+                        <p class="book-author">Yukio Mishima</p>
+                        <span class="book-category">Literature</span>
+                    </div>
+
+                    <div class="book-card" data-category="science">
+                        <h3 class="book-title">QED: The Strange Theory of Light and Matter</h3>
+                        <p class="book-author">Richard P. Feynman</p>
+                        <span class="book-category">Science</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">Beyond Good and Evil</h3>
+                        <p class="book-author">Friedrich Nietzsche</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+
+                    <div class="book-card" data-category="finance">
+                        <h3 class="book-title">Poor Charlie's Almanack</h3>
+                        <p class="book-author">Charles T. Munger</p>
+                        <span class="book-category">Finance</span>
+                    </div>
+
+                    <div class="book-card" data-category="science">
+                        <h3 class="book-title">Mathematics for Self Study</h3>
+                        <p class="book-author">Various Authors</p>
+                        <span class="book-category">Science</span>
+                    </div>
+
+                    <div class="book-card" data-category="finance">
+                        <h3 class="book-title">Technical Analysis of the Financial Markets</h3>
+                        <p class="book-author">John J. Murphy</p>
+                        <span class="book-category">Finance</span>
+                    </div>
+
+                    <div class="book-card" data-category="finance">
+                        <h3 class="book-title">Common Stocks and Uncommon Profits</h3>
+                        <p class="book-author">Philip A. Fisher</p>
+                        <span class="book-category">Finance</span>
+                    </div>
+
+                    <div class="book-card" data-category="psychology">
+                        <h3 class="book-title">Thinking, Fast and Slow</h3>
+                        <p class="book-author">Daniel Kahneman</p>
+                        <span class="book-category">Psychology</span>
+                    </div>
+
+                    <div class="book-card" data-category="psychology">
+                        <h3 class="book-title">Flow</h3>
+                        <p class="book-author">Mihaly Csikszentmihalyi</p>
+                        <span class="book-category">Psychology</span>
+                    </div>
+
+                    <div class="book-card" data-category="literature">
+                        <h3 class="book-title">Inferno</h3>
+                        <p class="book-author">Dante Alighieri</p>
+                        <span class="book-category">Literature</span>
+                    </div>
+
+                    <div class="book-card" data-category="psychology">
+                        <h3 class="book-title">Man and His Symbols</h3>
+                        <p class="book-author">Carl Jung</p>
+                        <span class="book-category">Psychology</span>
+                    </div>
+
+                    <div class="book-card" data-category="history">
+                        <h3 class="book-title">Hitler's Pope</h3>
+                        <p class="book-author">John Cornwell</p>
+                        <span class="book-category">History</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">Meditations</h3>
+                        <p class="book-author">Marcus Aurelius</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">The Art of War</h3>
+                        <p class="book-author">Lionel Giles</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">The Last Days of Socrates</h3>
+                        <p class="book-author">Plato</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+
+                    <div class="book-card" data-category="literature">
+                        <h3 class="book-title">1984</h3>
+                        <p class="book-author">George Orwell</p>
+                        <span class="book-category">Literature</span>
+                    </div>
+
+                    <div class="book-card" data-category="science">
+                        <h3 class="book-title">The Algorithm Design Manual</h3>
+                        <p class="book-author">Steven S. Skiena</p>
+                        <span class="book-category">Science</span>
+                    </div>
+
+                    <div class="book-card" data-category="literature">
+                        <h3 class="book-title">Les Misérables</h3>
+                        <p class="book-author">Victor Hugo</p>
+                        <span class="book-category">Literature</span>
+                    </div>
+
+                    <div class="book-card" data-category="literature">
+                        <h3 class="book-title">The Master and Margarita</h3>
+                        <p class="book-author">Mikhail Bulgakov</p>
+                        <span class="book-category">Literature</span>
+                    </div>
+
+                    <div class="book-card" data-category="science">
+                        <h3 class="book-title">Introduction to Algorithms Third Edition</h3>
+                        <p class="book-author">Thomas H. Cormen</p>
+                        <span class="book-category">Science</span>
+                    </div>
+
+                    <div class="book-card" data-category="finance">
+                        <h3 class="book-title">Bubbles and the End of Stagnation</h3>
+                        <p class="book-author">Byrne Hobart</p>
+                        <span class="book-category">Finance</span>
+                    </div>
+
+                    <div class="book-card" data-category="science">
+                        <h3 class="book-title">The Dream Machine</h3>
+                        <p class="book-author">M. Mitchell Waldrop</p>
+                        <span class="book-category">Science</span>
+                    </div>
+
+                    <div class="book-card" data-category="science">
+                        <h3 class="book-title">Pieces of the Action</h3>
+                        <p class="book-author">Vannevar Bush</p>
+                        <span class="book-category">Science</span>
+                    </div>
+
+                    <div class="book-card" data-category="finance">
+                        <h3 class="book-title">Lords of Finance</h3>
+                        <p class="book-author">Liaquat Ahamed</p>
+                        <span class="book-category">Finance</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">Either/Or: A Fragment of Life</h3>
+                        <p class="book-author">Søren Kierkegaard</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+
+                    <div class="book-card" data-category="philosophy">
+                        <h3 class="book-title">The Kybalion: Hermetic Philosophy</h3>
+                        <p class="book-author">Three Initiates</p>
+                        <span class="book-category">Philosophy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Daniel Berhane. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
